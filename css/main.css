@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+
+.signupFormErrors{
+    color: red;
+    display: none;
+}
+
+#backEndError{
+    width: 100%;
+}
+.logoutText{
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    padding-top: 10px;
+}
+.logoutText:hover{
+    color: rgb(105, 105, 105);
+    cursor: pointer;
+}
+.productLink{
+    width: calc(100% - 47.59px);
+    text-decoration: none;
+    color: #212529;
+}
+.productLink:hover{
+    color: #303030;
+}
+.editBtn{
+    border: none;
+    background-color: transparent;
+}
+.editIcon{
+    color: orange;
+    font-size: 25px;
+}
+.loading{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.loadingTitle{
+    padding: 0px;
+}
+#editProductTitle{
+    width: 100%;
+}
+
+/****Signup buttons***/
+
+@media (max-width: 1200px) {
+    .signup-btn {
+        width: 40% !important;
+        margin-top: 20px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .signup-btn {
+        width: 200px !important;
+    }
+}
