@@ -25,8 +25,10 @@ $accessableOnlyWhenLoggedIn = ["products"];
 $user = new User();
 //check if the user has to be logged in to access the page
 foreach ($accessableOnlyWhenLoggedIn as $page) {
-    if ($url[0] === $page && !$user->isLoggedIn()) {
-        Router::redirect("login");
+    if (isset($url[0])) {
+        if ($url[0] === $page && !$user->isLoggedIn()) {
+            Router::redirect("login");
+        }
     }
 }
 
